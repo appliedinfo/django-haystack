@@ -161,7 +161,6 @@ class SolrSearchBackend(BaseSearchBackend):
 
         kwargs = {
             'fl': '* score',
-            'df': index.document_field,
         }
 
         if fields:
