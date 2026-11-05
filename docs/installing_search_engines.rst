@@ -28,7 +28,7 @@ but not useful for haystack, and we'll need to configure solr to use a static
 (classic) schema.  Haystack can generate a viable schema.xml and solrconfig.xml
 for you from your application and reload the core for you (once Haystack is
 installed and setup).  To do this run:
-``./manage.py build_solr_schema --configure-directory=<CoreConfigDif>
+``./manage.py build_solr_schema --configure-directory=<CoreConfigDir>
 --reload-core``. In this example CoreConfigDir is something like
 ``../solr-6.5.0/server/solr/tester/conf``, and ``--reload-core``
 is what triggers reloading of the core.  Please refer to ``build_solr_schema``
@@ -153,7 +153,7 @@ Elasticsearch is similar to Solr — another Java application using Lucene — b
 focused on ease of deployment and clustering. See
 https://www.elastic.co/products/elasticsearch for more information.
 
-Haystack currently supports Elasticsearch 1.x, 2.x, 5.x, and 7.x.
+Haystack currently supports Elasticsearch 5.x and 7.x.
 
 Follow the instructions on https://www.elastic.co/downloads/elasticsearch to
 download and install Elasticsearch and configure it for your environment.
